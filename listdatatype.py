@@ -1,51 +1,57 @@
 #string,numbers,float,list,tuples,sets,dictionaries
 
 
-#[]
+#represent ->[]
 #index start with 0
-students=["wadood","haider","zubair","naeem","sana","ayesha"]
-print(students[0])
-print(students[4])
-print(len(students))
+students=["wadood","haider","zubair","naeem","sana","ayesha"] #0-5
+print(students[0]) #wadood
+print(students[4]) #sana
+print(len(students)) # 6
 print(students)
 
 #concatenate List
-finallist=[4,5]+[6,7]
-print(finallist)
+list1=[1,2,3,4]
+list2=[5,6,7,8]
+final_list=list1+list2
+print(final_list)
+final_list1=[1,2,3,4]+[5,6,7,8]
+print(final_list1)
 
-#print 0 to 50
-#for int i=0 ;i<=50;i++
-for x in range(50):
-    print(x) 
 
 #built in methods
 
 #add values in existing list
+students.append("abc")
 students.append("haris")
-print(students)
+print("Append : %s "% students)
 
 #add value in location
-students.insert(2,"Hammad")
-print(students)
+students.insert(4,"Hammad")
+print("Insert Specific Location : %s " % students)
 
 #remove element from list
 students.remove("naeem")
-print(students)
-
-#revers list
-students.reverse()
-print(students)
+print("Remove : %s "% students)
 
 #remove from last 
 students.pop()
-print(students)
+print("Remove from Last :%s "% students)
 
 #remove from specific location
 students.pop(2)
-print(students)
+print("Remove from location: %s"%students)
 
+
+#revers list
+students.reverse()
+print("Reverse List :%s"%students)
+print(students[0])
 
 #slicing lists
+print(students[0:6])
+print(students[2:])
+print(students[:4])
+
 print(students[0:4]) #select first 4 data
 print(students[:4])  #select through start 
 print(students[2:])  # Index 2 through end 

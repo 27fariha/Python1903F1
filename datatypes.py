@@ -20,7 +20,7 @@ print(type(name))
 #concatenate
 print("my name is "+name)
 print("My Age is ",num)
-print("My name is %s and age is %d" % (name,num))
+print("My name is %s and age is %d"% (name,num))
 
 sentence="My name is Fariha And I'm Doign Master in CS"
 print(sentence[:18])

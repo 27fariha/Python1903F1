@@ -8,6 +8,7 @@ print(students[0]) #wadood
 print(students[4]) #sana
 print(len(students)) # 6
 print(students)
+print(type(students)) #list
 
 #concatenate List
 list1=[1,2,3,4]

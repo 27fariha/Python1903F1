@@ -7,41 +7,48 @@ fruits=("apple","watermelon","kiwi","cherry")
 print(fruits)
 
 #2nd method use with Constructor
+a=tuple((1,2,3,4,5,6,7,8))
 fruits1=tuple(("apple","watermelon","kiwi","cherry"))
 print(fruits1)
 
 #access
 #index start with 0
-print(fruits[2])
-print(fruits[1:3]) #between 
-print(fruits[:3])
-print(fruits[2:])
+print(fruits[2]) #kiwi
+print(fruits[1:3]) #between  - water.....
+print(fruits[:3])  #start with zero index ...
+print(fruits[2:])  # kiwi,cherry
 
 
 #check values
-if "kiwiiii" not in fruits:
+#a=kiwiiiiii
+# if (a != kiwi)
+if "kiwii" not in fruits:
     print("Yes")
 else:
     print("No")
 
-#add values 
-#step 1: first change tuple into list
-#step 2: add desirable value into list
-#step 3: after this change list to tuple 
-y=list(fruits)
-y.append("orange")
-fruits=tuple(y)
-print(fruits)
 
-#access through index 
-for i in range(len(fruits)): #range(5) -. 0 to 4
-    print(fruits[i])
+
+#add values 
+#step 1: first change/convert tuple into list
+#step 2: add desirable value into list
+#step 3: after this change/convert list to tuple 
+#ex-1
+e=list(fruits)
+e.append("abc")
+fruits=tuple(e)
+print(fruits)
 
 #join 2 tuple
 finalList=fruits+fruits1
 print(finalList)
 
-
 #multiply tuples
-z=fruits1*5
+z=fruits1*3
 print(z)
+
+
+
+#access through index 
+for i in range(len(fruits)): #range(5) -. 0 to 4
+    print(fruits[i])

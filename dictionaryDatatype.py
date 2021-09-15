@@ -30,11 +30,6 @@ print(students)
 print(students[1])
 
 
-#loop with dict
-for key in dict1:
-    print(key)
-
-
 #key(), values() , items()
 
 print(dict1.values()) # print Values 
@@ -60,3 +55,30 @@ print(dict1)
 new_dic={5:{'Name':"Hammad"},6:{'Name':"Naeem"}}
 students.update(new_dic)
 print(students)
+
+
+
+#loops
+#loop with dict
+for key in students:
+    print(key)
+
+#loop with dict value
+#1st method
+for x in  students:
+    print(students[x])
+#2nd Method
+for s in dict2.values():
+    print(s)
+
+#key() 
+for x in dict2.keys():
+    print(x)
+
+#key,value
+for k,v in dict2.items():
+    print(k,v)
+
+#copy method
+x=students.copy()
+print(x)

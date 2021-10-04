@@ -2,7 +2,7 @@
 # pickle - library for serialization data
 # dump(), dumps() -> pass objects 
 # load()-> read pickle object from file 
-# loads()-> read pickle object 
+# loads()-> read pickle object from memory
 
 
 #serialization 
